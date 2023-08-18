@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>CSS Grid</title>
+    <style>
+        .container1{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap: 5px;
+         
+            
+        }
+        .items1{
+            background-color:deepskyblue ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        }
+        .items2{
+            background-color:#ff9d00 ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        }
+        .items3{
+            background-color:#0800ff ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        } .items4{
+            background-color:#f2ff00 ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        } .items5{
+            background-color:rgb(183, 14, 186) ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        } .items6{
+            background-color:rgb(8, 216, 81) ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        } .items7{
+            background-color:indianred;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        } .items8{
+            background-color:cadetblue;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        } .items9{
+            background-color:darkred ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+        }
+        .container2{
+            display:grid;
+            grid-template-columns: auto auto auto ;
+            gap: 10px;
+            
+        }
+        .itemsA{
+            background-color:aquamarine;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+        }
+        .itemsB{
+            background-color:rgb(242, 202, 5);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+            
+        }
+        .itemsC{
+            background-color:rgb(95, 213, 136);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 250px;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            
+        }
+        .itemsD{
+            background-color:rgb(183, 14, 186) ;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+           
+            
+        }
+        .itemsE{
+            background-color:deeppink;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            
+        }
+        .itemsF{
+            background-color:rgb(93, 108, 243);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }  
+        
+        .container3{
+            display: grid;
+            background-color: rgba(0, 0, 0, 0.782);
+            grid-template-columns: auto auto auto;
+        }
+        .item-head{
+            background-color: blueviolet;
+            border-color: black;
+            border-style: solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+            margin: 20px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        .item-sidebar{
+            background-color: aqua;
+            border-style: solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 200px;
+            margin: 10px;
+            margin-left: 20px;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item-content1{
+            background-color: #403af4;
+            border-style: solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 60px;
+            margin: 10px;
+            margin-right: 20px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item-content2{
+            background-color: #403af4;
+            border-style: solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 60px;
+            margin: 10px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .item-content3{
+            background-color: #403af4;
+            border-style: solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 60px;
+            margin: 10px;
+            margin-right: 20px;
+        }
+        .item-footer{
+            background-color: blueviolet; 
+            border-color: black;
+            border-style: solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 30px;
+            margin: 20px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>CSS Grid-1</h3>
+    <dev class="container1">
+        <dev class="items1">1.</dev>
+        <dev class="items2">2.</dev>
+        <dev class="items3">3.</dev>
+        <dev class="items4">4.</dev>
+        <dev class="items5">5.</dev>
+        <dev class="items6">6.</dev>
+        <dev class="items7">7.</dev>
+        <dev class="items8">8.</dev>
+        <dev class="items9">9.</dev>
+    </dev>
+    <h3>CSS Grid-2</h3>
+    <dev class="container2">
+        <dev class="itemsA">A.</dev>
+        <dev class="itemsB">B.</dev>
+        <dev class="itemsC">C.</dev>
+        <dev class="itemsD">D.</dev>
+        <dev class="itemsE">E.</dev>
+        <dev class="itemsF">F.</dev>
+        
+    </dev>
+    <h3>CSS Grid-3</h3>
+    <dev class="container3">
+        <div class="item-head">Header</div>
+        <div class="item-sidebar">Sidebar</div>
+        <div class="item-content1">Content-1</div>
+        <div class="item-content2">Content-2</div>
+        <div class="item-content3">Content-3</div>
+        <div class="item-footer">footer</div>
+    </dev>
+    
+</body>
+</html>
