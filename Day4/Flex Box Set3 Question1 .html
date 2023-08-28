@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Box</title>
+        <style>
+       
+        .container {
+            display: flex;
+            width: 700px;
+            height: 300px;
+            padding: 0%;
+            gap: 5px;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content:space-around; 
+        }
+        .item1{
+            background-color: skyblue;
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+
+        }
+        .item2{
+            background-color:orangered;
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item3{
+            background-color: darkblue;
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item4{
+            background-color: yellow;
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item5{
+            background-color: blueviolet;
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item6{
+            background-color: rgb(24, 146, 24);
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item7{
+            background-color: rgb(255, 106, 0);
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item8{
+            background-color: rgb(4, 119, 96);
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item9{
+            background-color: brown;
+            height: 80px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .container1 {
+            display: flex;
+            width: 885px;
+            height: 300px;
+            gap: 3px;
+            margin-top: 200px ;
+            margin-left: 400px;
+            margin-bottom: 200px;
+            flex-wrap: wrap;
+            /* justify-content:space-around; */
+        }
+        .itemA{
+            background-color: rgb(9, 168, 123);
+            height: 100px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+
+        }
+        .itemB{
+            background-color:rgb(163, 124, 17);
+            height: 100px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .itemC{
+            background-color: rgb(103, 195, 33);
+            height: 225px;
+            width: 402px;
+            margin-left: .2%;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            order: 6;
+           
+        }
+        .itemD{
+            background-color: rgb(83, 4, 91);
+            height: 100px;
+            width: 180px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            
+        }
+        /* .container2{
+            display: flex;
+            flex-direction: column; 
+        } */
+        .itemE{
+            background-color: rgb(144, 5, 95);
+            height: 90px;
+            width: 178px;
+            margin-bottom:2%;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            
+        }
+        .itemF{
+            background-color: rgb(13, 101, 172);
+            height: 90px;
+            width: 178px;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+      
+        /* .p3{
+            display: flex;
+        } */
+        .container3{
+            display: flex;
+            background-color: black;
+            display: flex;
+            width: 650px;
+            height: 405px;
+            gap: 3px;
+            margin-top: 200px ;
+            margin-left: 400px;
+            margin-bottom: 200px;
+            flex-wrap: wrap;
+        }
+        .box1{
+            background-color: blueviolet;
+            height: 50px;
+            width: 700px;
+            margin: 10px;
+            text-align: center;
+        }
+        .box2{
+            background-color:aquamarine;
+            height: 252px;
+            width: 150px;
+            margin-left: 10px;
+            margin-right: 5px;
+            text-align: center;
+            
+        }
+        /* .container3-1{
+            display: flex;
+            flex-direction: column; 
+        } */
+        .box3{
+            background-color: rgb(87, 61, 237);
+            height: 100px;
+            width: 465px;
+            margin-left: 5px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        /* .container3-1-1{
+            display: flex;
+            flex-direction: column;
+        } */
+        .box4{
+            background-color: rgb(87, 61, 237);
+            margin: 5px;
+            margin-top: 10px;
+            height: 125px;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+        }
+        .box5{
+            background-color: rgb(87, 61, 237);
+            height: 125px;
+            width: 215px;
+            padding: 10px;
+            text-align: center;
+            margin-left: 235px;
+            margin-top: 10px;
+            position: absolute;
+            
+    
+        
+        }
+        .box6{
+            background-color: blueviolet;
+            height: 50px;
+            width: 715px;
+            margin: 10px;
+            text-align: center;
+            border: 5px solid;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="p1">
+            <div class="container">
+                <div class="item1">1.</div>
+                <div class="item2">2.</div>
+                <div class="item3">3.</div>
+                <div class="item4">4.</div>
+                <div class="item5">5.</div>
+                <div class="item6">6.</div>
+                <div class="item7">7.</div>
+                <div class="item8">8.</div>
+                <div class="item9">9.</div>
+            </div>
+        </div>
+        <div class="p2">
+            <div class="container1">
+                <div class="itemA">A</div>
+                <div class="itemB">B</div>
+                <div class="itemC">C</div>
+                <div class="itemD">D</div>
+                <div class="container2">
+                    <div class="itemE">E</div>
+                    <div class="itemF">F</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box1">Header</div>
+            <div class="box2">Sidebar</div>
+            <div class="container3-1">
+                <div class="box3">Content-1</div>
+                <div class="container3-1-1">
+                    <div class="box4">Content-2</div>
+                    <div class="box5">Content-3</div>
+                </div>
+            </div>
+            <div class="box6">Footer</div>
+        </div>
+
+    </body>
+</html>
